@@ -1,359 +1,243 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makerble HomePage</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-    
-<body style="color:rgb(0, 229, 255); background-color:black;">
-  <header>
+
+<header style="color:#337ab7; background-color:black">
 
     <div class="container page-header">
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">WebSiteName</a>
-              </div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Page 1-1</a></li>
-                    <li><a href="#">Page 1-2</a></li>
-                    <li><a href="#">Page 1-3</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Page 2</a></li>
-              </ul>
-              <button class="btn btn-info navbar-btn">Button</button>
-              <form class="navbar-form navbar-left" action="/action_page.php">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="./logo.png" alt="Makerble" height="40px" width="40px" >
+                    </a>
                 </div>
-                <button type="submit" class="btn btn-default">Submit
-                    
-                </button>
-              </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-              </ul>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Page 2</a></li>
+                </ul>
+                <button class="btn btn-info navbar-btn">Button</button>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit
+
+                    </button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
             </div>
         </nav>
-            <br>
+        <br>
         <div class="container">
             <!-- <h2>Dynamic Tabs</h2>
             <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p> -->
-          
+
             <ul class="nav nav-pills nav-justified">
-              <li class="active"><a data-toggle="pill" href="#home">Events</a></li>
-              <li><a data-toggle="pill" href="#menu1">Contacts</a></li>
-              <li><a data-toggle="pill" href="#menu2">Albums</a></li>
-              <li><a data-toggle="pill" href="#menu3">Organizations</a></li>
-              <li><a data-toggle="pill" href="#menu4">Following</a></li>
-              <li><a data-toggle="pill" href="#menu5">NewsFeed</a></li>
-              <li><a data-toggle="pill" href="#menu6">Progress Board</a></li>
+                <li class="active"><a data-toggle="pill" href="#home">Events</a></li>
+                <li><a data-toggle="pill" href="#menu1">Contacts</a></li>
+                <li><a data-toggle="pill" href="#menu2">Albums</a></li>
+                <li><a data-toggle="pill" href="#menu3">Organizations</a></li>
+                <li><a data-toggle="pill" href="#menu4">Following</a></li>
+                <li><a data-toggle="pill" href="#menu5">NewsFeed</a></li>
+                <li><a data-toggle="pill" href="#menu6">Progress Board</a></li>
             </ul>
-          
+
             <div class="tab-content">
-                
-              <div id="home" class="tab-pane fade in active">
-                <h3>ُEvents</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-              <div id="menu1" class="tab-pane fade">
-                <h3>Contacts</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <div id="menu2" class="tab-pane fade">
-                <h3>Albums</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              </div>
-              <div id="menu3" class="tab-pane fade">
-                <h3>Organizations</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-              <div id="menu4" class="tab-pane fade">
-                <h3>Following</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-              <div id="menu5" class="tab-pane fade">
-                <h3>NewsFeed</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-              <div id="menu6" class="tab-pane fade">
-                <h3>Progress Board</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
+
+                <div id="home" class="tab-pane fade in active">
+                    <h3>ُEvents</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Contacts</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Albums</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam.</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Organizations</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.</p>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                    <h3>Following</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.</p>
+                </div>
+                <div id="menu5" class="tab-pane fade">
+                    <h3>NewsFeed</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.</p>
+                </div>
+                <div id="menu6" class="tab-pane fade">
+                    <h3>Progress Board</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.</p>
+                </div>
             </div>
         </div>
-    </div>
     
 
+        <div class="row">
+            <div class="col-md-8">
+                <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <a href="./event.html" target="_blank">
+                    <circle r="45" cx="50" cy="50" fill="grey" />
+                    <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                        repeatCount="indefinite" />
+                    </a>
 
-<!-- <div class=" text-center"> -->
-  <!-- jumbotron -->
-    <!-- <div class="container">
-        <h2>Button Tags</h2>
-        <a href="#" class="btn btn-info" role="button">Link Button</a>
-        <button type="button" class="btn btn-info">Button</button>
-        <input type="button" class="btn btn-info" value="Input Button">
-        <input type="submit" class="btn btn-info" value="Submit Button">
-      </div>
-    <h1>My Home Page</h1>
-    <p>Resize this responsive page to see the effect!</p> 
-    <div class="container">
-        <h3>Inline List</h3>
-        <ul class="list-inline">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-        </ul>
-    </div>
-    <div class="container"> -->
-        <!-- <h3>Tabs With Dropdown Menu</h3>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Submenu 1-1</a></li>
-              <li><a href="#">Submenu 1-2</a></li>
-              <li><a href="#">Submenu 1-3</a></li>                        
-            </ul>
-          </li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-        </ul>
-    </div>
-    <ul class="nav nav-pills">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a></li>
-        <li><a href="#">Menu 3</a></li>
-    </ul> -->
-    <!-- Centered Tabs -->
-    <!-- <div class="container">
-        <h3>Centered Tabs</h3>
-        <p>To center/justify the tabs and pills, use the .nav-justified class. Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered).</p>
-        <ul class="nav nav-tabs nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-        </ul>
-        <br>
-        <h3>Centered Pills</h3>
-        <ul class="nav nav-pills nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-        </ul>
-    </div> -->
+                    <text x="25" y="53" style="font-family:Verdana;font-size:13; font-weight:bold">Events
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </text>
+                Sorry, your browser does not support inline SVG.
+                </svg>
 
-    
+                <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <a href="" target="_blank">
+                        <circle r="45" cx="50" cy="50" fill="grey" />
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 1200,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </a>
+
+                    <text x="20" y="50" style="font-family:Verdana;font-size:13; font-weight:bold">
+                        <a href="./event.html">Contacts</a>
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 1200,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
 
 
-    <!-- <div class="background">
-      <div class="container team">
-          <div class="row">
+                <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <a href="" target="_blank">
+                        <circle r="45" cx="50" cy="50" fill="grey" />
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </a>
 
-    <div class="card col-lg-3 col-md-3 col-sm-4 text-center"> 
-      <img class="card-img-top rounded-circle" src="https://www.w3schools.com/bootstrap/img_avatar1.png" alt="Card image" style="width:60px">
-      <div class="card-body">
-          <h4 class="card-title">Jane Doe</h4>
-          <p class="card-text">Job Description</p>
-      </div>
-  </div> -->
+                    <text x="20" y="50" style="font-family:Verdana;font-size:13; font-weight:bold">
+                        <a href="./event.html">Projects</a>
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
 
-  </div>
-  </div>
-  </div>
-            
+                <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <a href="" target="_blank">
+                        <circle r="45" cx="50" cy="50" fill="grey" />
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 1200,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </a>
 
-    
-</div>
+                    <text x="20" y="50" style="font-family:Verdana;font-size:13; font-weight:bold">
+                        <a href="./event.html">Albums</a>
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 1200,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                
+                
+            </div>
+            <div class="col-md-4">
+                
+                <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <a href="" target="_blank">
+                        <circle r="45" cx="50" cy="50" fill="grey" />
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </a>
 
-<!-- <h2>SVG animateMotion Element</h2> -->
-
-<div class="row">
-    <div class="col-md-8">
-<svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-<a href="https://www.w3schools.com/graphics/" target="_blank">
-  <circle r="45" cx="50" cy="50" fill="grey" />
-    <animateMotion
-      path="M0,0 q60,100 100,0 q60,20 1200,0"
-      begin="0s"
-      dur="10s"
-      repeatCount="indefinite" />
-  </a>
-  
-  <text x="30" y="50" style="font-family:Verdana;font-size:15">Events
-    <animateMotion
-      path="M0,0 q60,100 100,0 q60,20 1200,0"
-      begin="0s"
-      dur="10s"
-      repeatCount="indefinite" />
-  </text>
-  Sorry, your browser does not support inline SVG.  
-</svg>
-
-    <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-    <a href="" target="_blank">
-      <circle r="45" cx="50" cy="50" fill="grey" />
-        <animateMotion
-          path="M0,0 q60,100 100,0 q60,20 1200,0"
-          begin="0s"
-          dur="10s"
-          repeatCount="indefinite" />
-      </a>
-      
-      <text x="20" y="50" style="font-family:Verdana;font-size:15">
-        <a href="./event.html">Contacts</a>
-        <animateMotion
-          path="M0,0 q60,100 100,0 q60,20 1200,0"
-          begin="0s"
-          dur="10s"
-          repeatCount="indefinite" />
-      </text>
-      Sorry, your browser does not support inline SVG.  
-    </svg>
-
-  
-        <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-            <a href="" target="_blank">
-              <circle r="45" cx="50" cy="50" fill="grey" />
-                <animateMotion
-                  path="M0,0 q60,100 100,0 q60,20 1200,0"
-                  begin="0s"
-                  dur="10s"
-                  repeatCount="indefinite" />
-              </a>
-              
-              <text x="20" y="50" style="font-family:Verdana;font-size:15">
-                <a href="./event.html">Projects</a>
-                <animateMotion
-                  path="M0,0 q60,100 100,0 q60,20 1200,0"
-                  begin="0s"
-                  dur="10s"
-                  repeatCount="indefinite" />
-              </text>
-              Sorry, your browser does not support inline SVG.  
-            </svg>
-            <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-                <a href="" target="_blank">
-                  <circle r="45" cx="50" cy="50" fill="grey" />
-                    <animateMotion
-                      path="M0,0 q60,100 100,0 q60,20 1200,0"
-                      begin="0s"
-                      dur="10s"
-                      repeatCount="indefinite" />
-                  </a>
-                  
-                  <text x="20" y="50" style="font-family:Verdana;font-size:15">
-                    <a href="./event.html">Albums</a>
-                    <animateMotion
-                      path="M0,0 q60,100 100,0 q60,20 1200,0"
-                      begin="0s"
-                      dur="10s"
-                      repeatCount="indefinite" />
-                  </text>
-                  Sorry, your browser does not support inline SVG.  
+                    <text x="16" y="53" style="font-family:Verdana;font-size:13; font-weight:bold">
+                        <a href="./event.html">Following</a>
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </text>
+                    Sorry, your browser does not support inline SVG.
                 </svg>
                 <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
                     <a href="" target="_blank">
-                      <circle r="45" cx="50" cy="50" fill="grey" />
+                    <circle r="45" cx="50" cy="50" fill="grey" />
+                    <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                        repeatCount="indefinite" />
+                    </a>
+
+                    <text x="14" y="53" style="font-family:Verdana;font-size:13; font-weight:bold">
+                        <a href="./event.html">NewsFeed</a>
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+
+                <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <a href="" target="_blank">
+                        <circle r="45" cx="50" cy="50" fill="grey" />
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 1200,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </a>
+
+                    <text x="14" y="53" style="font-family:Verdana;font-size:13; font-weight:bold">
+                        <a href="./event.html">Progress</a>
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 1200,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
+                    </text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+        </div>
+                <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg">
+                    <a href="./event.html" target="_blank">
+                        <circle cx="50" cy="50" r="50" style="fill:red;">
+                            <animate attributeName="cx" begin="0s" dur="10s" from="50" to="100%" repeatCount="indefinite" />
+                        </circle>
+                    </a>
+                    
+                        <text x="30" y="60" style="font-family:Verdana;font-size:13; font-weight:bold">Dashboard
                         <animateMotion
-                          path="M0,0 q60,100 100,0 q60,20 1200,0"
+                          path="M0,0 q60,100 100,0 q60,-20 1000,0"
                           begin="0s"
                           dur="10s"
                           repeatCount="indefinite" />
-                      </a>
-                      
-                      <text x="20" y="50" style="font-family:Verdana;font-size:15">
-                        <a href="./event.html">Following</a>
-                        <animateMotion
-                          path="M0,0 q60,100 100,0 q60,20 1200,0"
-                          begin="0s"
-                          dur="10s"
-                          repeatCount="indefinite" />
-                      </text>
-                      Sorry, your browser does not support inline SVG.  
-                    </svg>
-                </div>
-                <div class="col-md-4">
-                    <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-                        <a href="" target="_blank">
-                          <circle r="45" cx="50" cy="50" fill="grey" />
-                            <animateMotion
-                              path="M0,0 q60,100 100,0 q60,20 1200,0"
-                              begin="0s"
-                              dur="10s"
-                              repeatCount="indefinite" />
-                          </a>
-                          
-                          <text x="14" y="53" style="font-family:Verdana;font-size:15">
-                            <a href="./event.html">NewsFeed</a>
-                            <animateMotion
-                              path="M0,0 q60,100 100,0 q60,20 1200,0"
-                              begin="0s"
-                              dur="10s"
-                              repeatCount="indefinite" />
-                          </text>
-                          Sorry, your browser does not support inline SVG.  
-                        </svg>
+                        </text>
+                      Sorry, your browser does not support inline SVG.
+                </svg>
 
-                        <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-                            <a href="" target="_blank">
-                              <circle r="45" cx="50" cy="50" fill="grey" />
-                                <animateMotion
-                                  path="M0,0 q60,100 100,0 q60,20 1200,0"
-                                  begin="0s"
-                                  dur="10s"
-                                  repeatCount="indefinite" />
-                              </a>
-                              
-                              <text x="14" y="53" style="font-family:Verdana;font-size:15">
-                                <a href="./event.html">Progress</a>
-                                <animateMotion
-                                  path="M0,0 q60,100 100,0 q60,20 1200,0"
-                                  begin="0s"
-                                  dur="10s"
-                                  repeatCount="indefinite" />
-                              </text>
-                              Sorry, your browser does not support inline SVG.  
-                        </svg>
-
-
-                </div>
-    
-                </div>
-    <!-- <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="50" style="fill:red;">
-          <animate
-            attributeName="cx"
-            begin="0s"
-            dur="10s"
-            from="50"
-            to="100%"
-            repeatCount="indefinite" />
-        </circle>
-        Sorry, your browser does not support inline SVG.
-      </svg> -->
-
-
+    </div>
 </header>
-    
-  
 
+<body>
 </body>
+
 </html>
