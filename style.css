@@ -35,5 +35,23 @@
     color:grey; 
     font-weight: bolder;
 }
+
+.box {
+    border: 2px solid green;
+    width: 100%;
+    background-color: #152733;
+    color:darkgrey;
+  }
+
+.box .list-group-item {
+    padding: 0px; 
+}
+
+  input[type=text], input[type=url]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+  }
  
 
