@@ -1,36 +1,18 @@
-/* .header {
-    background-image: url('images/header-background.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-} */
 
-/* #little-box
-{
-  background-color: black;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 0px;
-  left: 0px;
-} */
+.list-group-item {
+    width: 300px;
+}
 
-.overlay {
-    /* background: rgba(0, 0, 0, 0.6); */
-    /* background: rgb(198, 194, 194); */
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-
+.row .text-center .btn .btn-info {
+    margin-bottom: 40px;
 }
 
 .background {
-	/* background: #2f62a6; */
-	padding: 4em 0;
+    background: #dedec8;
+    padding: 4em 0;
 }
 .team {
-	/* color: #5e5e55; */
+	color: #5e5e55;
 	padding: 0 180px;
 }
 .team .card-columns {
@@ -48,7 +30,10 @@
 	text-transform: uppercase;
 }
 
-/* .events {
-    /* background-color: whitesmoke; 
-} */
+.dashboard a {
+    font-size: small;
+    color:grey; 
+    font-weight: bolder;
+}
+ 
 
