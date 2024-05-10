@@ -12,47 +12,51 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
 
-<div style="color:#337ab7; background-color:black">
 
-    <div class="container">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="./logo.png" alt="Makerble" height="40px" width="40px" >
-                    </a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="./dashboard.html">Dashboard </a></li>
-                    <li><a href="#">Stories</a></li>
-                </ul>
+<body style="color:#337ab7; background-color:black">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 
+                <a class="navbar-brand" style="margin-top: -10px;" href="./index.html">
+                    <img src="./logo.png" alt="Makerble" height="40px" width="40px" >
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="./sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="./sign.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
                 </ul>
             </div>
-        </nav>
-        
-        
+        </div>
+    </nav>
 
+
+
+    <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
                     <a href="./dashboard.html" target="_blank">
-                    <circle r="45" cx="50" cy="50" fill="grey" />
-                    <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
-                        repeatCount="indefinite" />
+                        <circle r="45" cx="50" cy="50" fill="grey" />
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
                     </a>
 
                     <text x="25" y="53" style="font-family:Verdana;font-size:13; font-weight:bold">Events
                         <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
                             repeatCount="indefinite" />
                     </text>
-                Sorry, your browser does not support inline SVG.
+                    Sorry, your browser does not support inline SVG.
                 </svg>
 
                 <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
@@ -100,11 +104,11 @@
                     </text>
                     Sorry, your browser does not support inline SVG.
                 </svg>
-                
-                
+
+
             </div>
             <div class="col-md-4">
-                
+
                 <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
                     <a href="" target="_blank">
                         <circle r="45" cx="50" cy="50" fill="grey" />
@@ -121,9 +125,9 @@
                 </svg>
                 <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
                     <a href="" target="_blank">
-                    <circle r="45" cx="50" cy="50" fill="grey" />
-                    <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
-                        repeatCount="indefinite" />
+                        <circle r="45" cx="50" cy="50" fill="grey" />
+                        <animateMotion path="M0,0 q60,100 100,0 q60,20 100,0" begin="0s" dur="10s"
+                            repeatCount="indefinite" />
                     </a>
 
                     <text x="14" y="53" style="font-family:Verdana;font-size:13; font-weight:bold">
@@ -150,27 +154,20 @@
                 </svg>
             </div>
         </div>
-                <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg">
-                    <a href="./dashboard.html" target="_blank">
-                        <circle cx="50" cy="50" r="50" style="fill:red;">
-                            <animate attributeName="cx" begin="0s" dur="10s" from="50" to="100%" repeatCount="indefinite" />
-                        </circle>
-                    </a>
-                    
-                        <text x="30" y="60" style="font-family:Verdana;font-size:13; font-weight:bold">Dashboard
-                        <animateMotion
-                          path="M0,0 q60,100 100,0 q60,-20 1000,0"
-                          begin="0s"
-                          dur="10s"
-                          repeatCount="indefinite" />
-                        </text>
-                      Sorry, your browser does not support inline SVG.
-                </svg>
+        <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg">
+            <a href="./dashboard.html" target="_blank">
+                <circle cx="50" cy="50" r="50" style="fill:red;">
+                    <animate attributeName="cx" begin="0s" dur="10s" from="50" to="100%" repeatCount="indefinite" />
+                </circle>
+            </a>
 
+            <text x="30" y="60" style="font-family:Verdana;font-size:13; font-weight:bold">Dashboard
+                <animateMotion path="M0,0 q60,100 100,0 q60,-20 1000,0" begin="0s" dur="10s" repeatCount="indefinite" />
+            </text>
+            Sorry, your browser does not support inline SVG.
+        </svg>
     </div>
-</div>
-
-
+    </div>
 </body>
 
 </html>
