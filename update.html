@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,131 +8,222 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    
+
+
 </head>
+
 <body>
-    <div class="col-sm-4 box">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 box">
+                <h4 style="font-weight:bold">Write a Post </h4>
+                <form>
+                    <!-- Input from User -->
 
-        <!------ Include the above in your HEAD tag ---------->
-        
-        <form>
-            <div>
-            Post an Update
-            <!-- Input from User -->
-            
-            <span><input type="text" placeholder='Write a Post' id="name"><br></span>
+                    <input type="text" placeholder='Your Name' id="name">
+                    <input type="text" placeholder='Write Something' id="post">
+                    <input type="text" placeholder='Search Projects......' id="project" class="form-control"><br>
+                    <ul class="list-group" id="myList">
+                        <li class="list-group-item">Project 1</li>
+                        <li class="list-group-item">Project 2</li>
+                        <li class="list-group-item">Project 3</li>
+                        <li class="list-group-item">Project 4</li>
+                    </ul>
+                    <br>
+                    <input type="date" placeholder='Date' id="date"><br>
+                    <input type="text" placeholder='Location' id="location"><br>
+                    <label for="upload">Attach</label>
+                    <input id="upload" type="file" onChange="handleImageUpload()" /><br>
+                    <label for="contact">Contacts: </label>
+                    <input type="checkbox" name="CA" id="a" onclick="myFunction(this.id)">
+                    <lable for="a">A</lable>
+                    <input type="checkbox" name="CB" id="b" onclick="myFunction(this.id)">
+                    <label for="b">B</label>
+                    <input type="checkbox" name="CC" id="c" onclick="myFunction(this.id)">
+                    <label for="c">C</label> <br> <br>
+                    <button id="show-image-button" type="submit" onclick="register(event)">Post</button>
+
+                </form>
             </div>
-            <input type="text" placeholder='Search Projects......' id="project" class="form-control"><br>
-            <ul class="list-group" id="myList">
-                <li class="list-group-item">Project 1</li>
-                <li class="list-group-item">Project 2</li>
-                <li class="list-group-item">Project 3</li>
-                <li class="list-group-item">Project 4</li>
-            </ul> 
-            <br>
-            <input type="date" placeholder='Date' id="date"><br>
-            <input type="text" placeholder='Location' id="location"><br>
-            <label for="upload">Attach</label>
-            <input id="upload" type="file" onChange="handleImageUpload()" /><br>
-        
-            
-            <label for="contact">Contacts: </label>
-            <input type="checkbox" name="CA" id="a" onclick="myFunction(this.id)">
-            <lable for="a">A</lable>
-            <input type="checkbox" name="CB" id="b" onclick="myFunction(this.id)">
-            <label for="b">B</label>
-            <input type="checkbox" name="CC" id="c" onclick="myFunction(this.id)">
-            <label for="c">C</label> <br> <br>
-            <button id="show-image-button" type="submit" onclick="register(event)">Post</button>
-            
-        </form>
-                    
+            <br><br>
+            <div class="col-sm-7">
 
-                        <br>
-                        <!-- Output Form Details -->
-                        <section>
-                        <ul>
-                        <li class="center"> Post: <span id="display_name"></span></li>
-                        <li class="center"> Project: <span id="display_project"></span></li>
-                        <li class="center"> Date: <span id="display_date"></span></li>
-                        <li class="center"> Location: <span id="display_location"></span></li>
-                        <li class="center"> Attachment: <img id="display-image" style="display: none" height="100px" width="100px" src="" /></li>
-                        
-                        </ul>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <p id="display_name"></p>
+                            <img id="display-image" class="img-circle" style="display: none; margin-left:-10;"
+                                height="55" width="55" src="" alt="Avatar" />
 
-                        
-                        
-                        <ul class="center d-flex inline-block"> Contacts 
-                        <li id="a_text" style="display: none;" >A</li>
-                        <li id="b_text" style="display: none;"> B</li>
-                        <li id="c_text" style="display: none;"> C</li>
-                        </ul>
-
-                        </section>
+                        </div>
                     </div>
+                    <div class="col-sm-9">
+                        <div class="well text-center">
+                            <span id="display_post"></span>
+                            <span id="display_project"></span>
+                            <span id="display_date"></span>
+                            <span id="display_location"></span>
+                            <span>
+                                    <ul>
+                                        <li id="a_text" style="display: none;">@A</li>
+                                        <li id="b_text" style="display: none;"> @B</li>
+                                        <li id="c_text" style="display: none;"> @C</li>
+                                    </ul>
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 well">
+                
+            </div>
+        </div>
+    </div>
 
-                    <script>
-                        const register = function (event) {
-    // Receive user input
-    let r_name = document.querySelector("#name").value;
-    let r_project = document.querySelector("#project").value;
-    let r_date = document.querySelector("#date").value;
-    let r_location = document.querySelector("#location").value;
-    
-    
-    // Output on page
-    display_name.innerHTML = r_name;
-    display_project.innerHTML = r_project;
-    display_date.innerHTML = r_date;
-    display_location.innerHTML = r_location; 
-                        
-    event.preventDefault();
-    };
+
+    <script>
+        const register = function (event) {
+            // Receive user input
+            let r_name = document.querySelector("#name").value;
+            let r_post = document.querySelector("#post").value;
+            let r_project = document.querySelector("#project").value;
+            let r_date = document.querySelector("#date").value;
+            let r_location = document.querySelector("#location").value;
+
+
+            // Output on page
+            display_name.innerHTML = r_name;
+            display_post.innerHTML = r_post;
+            display_project.innerHTML = r_project;
+            display_date.innerHTML = r_date;
+            display_location.innerHTML = r_location;
+            
+
+            event.preventDefault();
+        };
 
         // Function to upload Image as Input in HTML
-            function handleImageUpload() 
-            {
+        function handleImageUpload() {
             var image = document.getElementById("upload").files[0];
 
             var reader = new FileReader();
 
-            reader.onload = function(e) {
-            document.getElementById("display-image").src = e.target.result;
+            reader.onload = function (e) {
+                document.getElementById("display-image").src = e.target.result;
             }
 
             reader.readAsDataURL(image);
 
-            }
+        }
 
         const showImageButton = document.getElementById("show-image-button");
-        const myImage = document.getElementById("display-image"); 
-        showImageButton.addEventListener("click", () => { 
-            myImage.style.display = "block"; 
+        const myImage = document.getElementById("display-image");
+        showImageButton.addEventListener("click", () => {
+            myImage.style.display = "block";
         });
 
-        
 
-        
-                        $(document).ready(function(){
-                          $("#project").on("keyup", function() {
-                            var value = $(this).val().toLowerCase();
-                            $("#myList li").filter(function() {
-                              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                            });
-                          });
-                        });
-                        
-                         // Function to Display CheckBox Text AFTER Clicking Register Button
+
+
+        $(document).ready(function () {
+            $("#project").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myList li").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        // Function to Display CheckBox Text AFTER Clicking Register Button
         function myFunction(id) {
-        
-        const myText = document.getElementById(id+"_text"); 
-        showImageButton.addEventListener("click", () => { 
-            myText.style.display = "block"; 
-        });
+
+            const myText = document.getElementById(id + "_text");
+            showImageButton.addEventListener("click", () => {
+                myText.style.display = "block";
+            });
         }
-                        
-                    </script>
-    
+
+        showNotes();
+        // If user adds a note, add it to the localStorage 
+        let addBtn = document.getElementById("show-image-button");
+        addBtn.addEventListener("click", function (e) {
+            let addTxt = document.getElementById("post");
+            let notes = localStorage.getItem("display_post");
+
+            if (notes == null) notesObj = [];
+            else notesObj = JSON.parse(notes);
+
+            notesObj.push(addTxt.value);
+            localStorage.setItem("display_post", JSON.stringify(notesObj));
+            addTxt.value = "";
+
+            showNotes();
+        });
+
+        // Function to show elements from localStorage 
+        function showNotes() {
+            let notes = localStorage.getItem("display_post");
+
+            if (notes == null) notesObj = [];
+            else notesObj = JSON.parse(notes);
+
+            let html = "";
+
+            notesObj.forEach(function (element, index) {
+                html += `<div class="noteCard my-2 mx-2 card"
+                                    style="width: 18rem;"> 
+                                        <div class="card-body"> 
+                                            <h5 class="card-title" style="font-weight:bold; color:green;"> 
+                                                Post ${index + 1} 
+                                            </h5> 
+                                            <p class="card-text"> 
+                                                ${element} 
+                                            </p> 
+                                            <p>
+                                                
+                                                </p>
+
+                                        <button id="${index}" onclick= 
+                                            "deleteNote(this.id)"
+                                            class="btn btn-primary"> 
+                                            Delete Post 
+                                        </button> 
+                                    </div> 
+                                </div>`;
+            });
+
+            let notesElm = document.getElementById("display_post");
+
+            if (notesObj.length != 0) notesElm.innerHTML = html;
+            else
+                notesElm.innerHTML = `Nothing to show! 
+                                 "Write a Post" to add notes.`;
+        }
+
+        // Function to delete a note 
+        function deleteNote(index) {
+            let notes = localStorage.getItem("display_post");
+
+            if (notes == null) notesObj = [];
+            else notesObj = JSON.parse(notes);
+
+            notesObj.splice(index, 1);
+
+            localStorage.setItem("display_post",
+                JSON.stringify(notesObj));
+
+            showNotes();
+        }
+
+        //Note: the browser local storage sometimes stops responding
+        // the solution is to go to setting from the three dots in the browser
+        // choose clear browsing data; then choose Advanced
+        // choose Hosted App data 1 app (Web Store) and click clear data
+
+
+    </script>
+
 </body>
+
 </html>

@@ -11,7 +11,7 @@
     background: #dedec8;
     padding: 4em 0;
 }
-.team {
+/* .team {
 	color: #5e5e55;
 	padding: 0 180px;
 }
@@ -28,7 +28,7 @@
 	font-size: 1.3rem;
 	margin-bottom: 0;
 	text-transform: uppercase;
-}
+} */
 
 .dashboard a {
     font-size: small;
@@ -45,6 +45,7 @@
 
 .box .list-group-item {
     padding: 0px; 
+    width: 250px;
 }
 
   input[type=text], input[type=url]{
@@ -52,6 +53,13 @@
     padding: 12px 20px;
     margin: 4px 0;
     box-sizing: border-box;
+  }
+
+  footer {
+    background-color: #558;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
   }
  
 
